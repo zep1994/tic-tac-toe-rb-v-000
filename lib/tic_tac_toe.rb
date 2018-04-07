@@ -99,6 +99,8 @@ def play(board)
 
   if draw?(board)
     puts "Cat's Game!"
+  end
+  
   until over?(board) == true
     turn(board)
     end
