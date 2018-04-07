@@ -47,7 +47,9 @@ def move(board, index, current_player)
 end
 
 def turn_count(board)
-   turns = 0
+  # board.count{|token| token == "X" || token == "O"}
+
+  turns = 0
   board.each do |token|
     if token == "X" || token == "O"
       turns += 1
@@ -86,6 +88,7 @@ def winner(board)
     board[win.first]
   end
 end
+
 def play(board)
   until over?(board)
     turn(board)
