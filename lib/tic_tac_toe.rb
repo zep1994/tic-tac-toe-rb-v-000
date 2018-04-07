@@ -101,6 +101,8 @@ def play(board)
   until over?(board) == true
     turn(board)
     end
+  end  
+    
 if over?(board)
   !turn(board)
 end
