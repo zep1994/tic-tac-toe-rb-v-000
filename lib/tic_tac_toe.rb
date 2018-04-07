@@ -112,4 +112,3 @@ end
   if draw?(board)
     puts "Cats's Game!"
   end
-end
