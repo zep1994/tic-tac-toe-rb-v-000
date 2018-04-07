@@ -60,7 +60,7 @@ def turn_count(board)
 end
 
 def current_player(board)
-  turn_count(board).even? "X" : "O"
+  turn_count(board) % 2 == 0 ? "X" : "O"
 end
 
 def won?(board)
@@ -72,7 +72,7 @@ def won?(board)
 end
 
 def full?(board)
-board.all?{|token| token == "X" || token == "O"}
+board.all?{|token| token == "X" || token == "O"
 end
 
 def draw?(board)
@@ -103,7 +103,6 @@ def play(board)
   until over?(board) == true
     turn(board)
     end
-  end
 if over?(board)
   !turn(board)
 end
