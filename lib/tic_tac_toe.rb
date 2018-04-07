@@ -106,7 +106,7 @@ if over?(board)
 end
 
   if won?(board)
-    puts "Congratulations #{winner(board)}! "
+    puts "Congratulations #{winner(board)}!"
   end
 
   if draw?(board)
